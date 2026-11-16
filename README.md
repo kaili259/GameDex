@@ -62,6 +62,7 @@ La tabla `videojuegos` contiene:
 - `plataforma`: texto.
 - `anio`: entero.
 - `puntuacion`: número decimal de 0 a 5.
+- `Caratura`: donde se guarda la foto del juego.
 
 ## 7. Diseño y accesibilidad
 Las interfaces están separadas en archivos `.ui` para poder abrirlas y modificarlas con Qt Designer. Se utilizan layouts, etiquetas descriptivas, contraste elevado, botones con texto y campos de formulario identificados.
