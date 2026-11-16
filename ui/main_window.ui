@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowTitle"><string>GameDex | Biblioteca de videojuegos</string></property>
+  <property name="minimumSize"><size><width>900</width><height>620</height></size></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <property name="spacing"><number>16</number></property>
+    <property name="leftMargin"><number>24</number></property>
+    <property name="topMargin"><number>22</number></property>
+    <property name="rightMargin"><number>24</number></property>
+    <property name="bottomMargin"><number>22</number></property>
+    <item>
+     <layout class="QHBoxLayout" name="headerLayout">
+      <item><widget class="QLabel" name="logoLabel"><property name="text"><string>🎮 GameDex</string></property><property name="objectName"><string>logoLabel</string></property></widget></item>
+      <item><spacer name="headerSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+      <item><widget class="QPushButton" name="addButton"><property name="text"><string>＋ Añadir videojuego</string></property><property name="objectName"><string>addButton</string></property></widget></item>
+     </layout>
+    </item>
+    <item><widget class="QLabel" name="subtitleLabel"><property name="text"><string>Tu colección, organizada en un solo lugar.</string></property><property name="objectName"><string>subtitleLabel</string></property></widget></item>
+    <item>
+     <layout class="QHBoxLayout" name="filtersLayout">
+      <item><widget class="QLineEdit" name="searchInput"><property name="placeholderText"><string>Buscar por título...</string></property></widget></item>
+      <item><widget class="QComboBox" name="genreFilter"><property name="minimumSize"><size><width>150</width><height>0</height></size></property></widget></item>
+      <item><widget class="QComboBox" name="platformFilter"><property name="minimumSize"><size><width>170</width><height>0</height></size></property></widget></item>
+     </layout>
+    </item>
+    <item><widget class="QLabel" name="countLabel"><property name="text"><string>0 videojuegos</string></property><property name="objectName"><string>countLabel</string></property></widget></item>
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable"><bool>true</bool></property>
+      <widget class="QWidget" name="scrollContent">
+       <layout class="QGridLayout" name="cardsLayout">
+        <property name="alignment"><set>Qt::AlignTop</set></property>
+        <property name="horizontalSpacing"><number>16</number></property>
+        <property name="verticalSpacing"><number>16</number></property>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
