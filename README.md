@@ -37,7 +37,6 @@ GameDex/
 │   ├── main_window.ui
 │   └── game_form.ui
 ├── components/
-│   ├── __init__.py
 │   └── game_card.py
 └── resources/
     ├── images/
